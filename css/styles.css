@@ -1,0 +1,81 @@
+/* imports */
+
+@font-face {
+    font-family: "my font";
+    src: url(../ASSETS/BebasNeue-Regular.ttf);
+}
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes Genéricas */
+
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    
+}
+
+/* header */
+
+header {
+    height: 60px;
+    background-color: #F9003D;
+
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+header nav a {
+    font-family: "my font";
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+}
+header nav a:hover {
+    text-shadow:  2px 10px 2px rgba(249, 0, 61, 0.3);
+    background-color: white;
+    color: #F9003D;
+
+}
+/* main */
+main .banner {
+    height: 740px;
+    background-color: yellow;
+    background-image: url(../ASSETS/assets_/imagem-fundo-banner.png);
+}
+
+main h1 {
+    color: white;
+    font-size: 96px;
+    font-family: "my font";
+    font-weight: 400;
+    width: 545px;
+    height: 230px;
+    padding: 226px 284px 774px 121px ;
+
+
+}
