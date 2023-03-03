@@ -1,7 +1,7 @@
 /* imports */
 
 @font-face {
-    font-family: "my font";
+    font-family: "BebasNeue-Regular";
     src: url(../ASSETS/BebasNeue-Regular.ttf);
 }
 
@@ -18,9 +18,12 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}    
 
-    
-}
+body {
+ background-color: #080324;
+} 
+
 
 /* header */
 
@@ -44,7 +47,7 @@ header nav {
 }
 
 header nav a {
-    font-family: "my font";
+    font-family: "BebasNeue-Regular";
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -64,18 +67,56 @@ header nav a:hover {
 /* main */
 main .banner {
     height: 740px;
-    background-color: yellow;
     background-image: url(../ASSETS/assets_/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+ 
+
+main .banner-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 3px white;
 }
 
-main h1 {
-    color: white;
-    font-size: 96px;
-    font-family: "my font";
-    font-weight: 400;
-    width: 545px;
-    height: 230px;
-    padding: 226px 284px 774px 121px ;
+main  .banner-flex #banner-info {
+width: 560px;
+}
 
+main .banner-flex h1 { 
+ margin-bottom: 40px;
+font-family: "BebasNeue-Regular";
+font-size: 96px;
+color: white;
+}
+
+main .banner-flex p {
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F9003D;
 
 }
+
+main .sobre h2 {
+    font-family: "BebasNeue-Regular";
+    font-size: 64px;
+    color: #F9003D;
+
+}
+
+main .sobre .linha {
+    display: flex;
+    justify-content: space-between;
+}
+main .sobre .linha img {
+    width: 490px;
+}
+
+main .sobre .linha .participantes {
+    width: 590px;
+    border:  2px solid yellow;
+}   
