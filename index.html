@@ -13,12 +13,14 @@
 <body>
     <header>
         <div class="layout-grid header-flex">
-            <nav>
+            <nav id="navmenu">
                 <a href="">inicio</a>
                 <a href="">sobre</a>
                 <a href="">desafios</a>
                 <a href="">endereço</a>
             </nav>
+            <img src="ASSETS/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Abre o menu mobile" onclick="mostraMenu()">
+            
         </div>
     </header>
     <main>
@@ -27,7 +29,7 @@
                 <div id="banner-info">
                     <h1>Desenvolvimento de sistema 2023</h1>
                     <p>Senai informática</p>
-                    <img src="./ASSETS/assets_/mouse.svg" alt="">
+                    <img src="./ASSETS/assets_/mouse.svg" alt=""> 
                 </div>
             </div>
 
@@ -59,5 +61,11 @@
     </main>
     <footer></footer>
 </body>
+
+<script>
+    function mostraMenu() {
+        document.getElementById("navmenu").classList.toggle("mostrarMenu")
+    }
+</script>
 
 </html>

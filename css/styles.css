@@ -6,7 +6,7 @@
 }
 
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,11 +18,11 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}    
+}
 
 body {
- background-color: #080324;
-} 
+    background-color: #080324;
+}
 
 
 /* header */
@@ -58,12 +58,14 @@ header nav a {
     border-radius: 5px;
 
 }
+
 header nav a:hover {
-    text-shadow:  2px 10px 2px rgba(249, 0, 61, 0.3);
+    text-shadow: 2px 10px 2px rgba(249, 0, 61, 0.3);
     background-color: white;
     color: #F9003D;
 
 }
+
 /* main */
 main .banner {
     height: 740px;
@@ -71,7 +73,7 @@ main .banner {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
- 
+
 
 main .banner-flex {
     display: flex;
@@ -80,15 +82,15 @@ main .banner-flex {
     border: 3px white;
 }
 
-main  .banner-flex #banner-info {
-width: 560px;
+main .banner-flex #banner-info {
+    width: 560px;
 }
 
-main .banner-flex h1 { 
- margin-bottom: 40px;
-font-family: "BebasNeue-Regular";
-font-size: 96px;
-color: white;
+main .banner-flex h1 {
+    margin-bottom: 40px;
+    font-family: "BebasNeue-Regular";
+    font-size: 96px;
+    color: white;
 }
 
 main .banner-flex p {
@@ -112,11 +114,42 @@ main .sobre .linha {
     display: flex;
     justify-content: space-between;
 }
+
 main .sobre .linha img {
     width: 490px;
 }
 
 main .sobre .linha .participantes {
     width: 590px;
-    border:  2px solid yellow;
-}   
+    border: 2px solid yellow;
+}
+
+/* smartphones.= 0 ate 767px */
+@media screen and (max-width: 767px) {
+
+    /* temporariamente off */
+
+}
+
+header #menu-mobile {
+    display: block;
+}
+.mostrarMenu {
+    left: 0;
+    opacity: 1;
+}
+
+header nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F9003D;
+    border: #F9003D;
+    opacity: 0;
+    transition: left 0.4s, opacity 0.5s;
+}
+
